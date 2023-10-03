@@ -1,0 +1,317 @@
+html, body {
+    height: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100%;
+    margin-left:0;
+    margin-right:0;
+}
+
+.nav {
+    text-align: center;
+}
+
+.bg-color-black {
+    background-color: #000000;
+}
+
+.bg-color-white {
+    background-color: white;
+}
+
+.selected {
+    background-color: white;
+    padding: 15px;
+}
+
+.fg-color-white {
+    color: white;
+}
+
+.links {
+    padding: 5px;
+    font-size: 13px;
+    color: red;
+    text-decoration: none;
+}
+
+.margins {
+    margin: 5px;
+}
+
+.list-group-item{
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 0px;
+}
+
+.list-group{
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 0px;
+}
+
+
+.icon-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.text-red {
+    color: red;
+}
+
+#sidebar {
+    width: 85px;
+    margin-left:0;
+    margin-right:0;
+}
+
+.column {
+    margin: 10px;
+    padding-left: 25px;
+}
+
+.account-menu {
+    text-align: left;
+    margin: 20px;
+    padding-top: 70px;
+    width: 190px;
+}
+
+.selected-profile {
+    color: black;
+    border-style: none none none solid;
+    padding-left: 8px;
+}
+
+.account-main {
+    float: left;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.edit-button {
+    margin-top: 30px;
+}
+
+.btn-light{
+    background-color: lightgrey;
+    color: black;
+}
+
+.btn-red{
+    background-color: red;
+}
+
+.btn-pad{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.right {
+    float: right;
+}
+
+.col3 {
+    width: 5px;
+    margin-top: 40px;
+    align-content: center;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.buttons{
+    margin-left: 650px;
+}
+.header {
+    font-size: 40px;
+}
+
+.bg-custom-1 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    width: 260px;
+    margin: 30px;
+    height: 260px;
+}
+.card-header{
+    width: 100%;
+    height: 120px;
+    padding: 4px;
+    margin: 00px;
+}
+
+.d-flex {
+    padding: 0px;
+    margin: 20px;
+}
+
+.course_breadcrumb {
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px
+}
+
+.module {
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    border: 1px solid grey;
+    margin-bottom: 0px;
+}
+
+.module-links {
+    font-size: 15px;
+    color: red;
+    text-decoration: none;
+    text-align: left;
+    border: 1px solid grey;
+    margin-bottom: 0px;
+}
+
+.module-links-title {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    border: 1px solid grey;
+    margin-bottom: 0px;
+}
+.list-group-item-module{
+    text-decoration: none;
+}
+
+.wrapper-modules {
+    height: 100%;
+    margin-left:0;
+    margin-right:0;
+}
+
+.check {
+    color: green;
+}
+
+.left-icon {
+    padding-right: 5px;
+    align-content: center;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.module-text {
+    padding-left: 50px;
+}
+
+.module-links-text {
+    font-size: 15px;
+    color: red;
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.end-icon {
+    padding-left: 5px;
+    align-content: center;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: black;
+    align: center;
+}
+
+.btn-home {
+    width: 250px;
+    text-align: left;
+}
+
+.center{
+    justify-content:center;
+    align-items: center;
+    align: center;
+}
+
+
+.assign_des {
+    font-size: 10px;
+    color: grey;
+}
+
+.rounded-corners-all-around {
+    border-radius: 50px;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.assign-edit-text {
+    text-align: left;
+
+}
+
+.assign-dropdown {
+    border: 1px solid lightgrey;
+}
+
+.check-center {
+    justify-content: center;
+    align: center;
+}
+
+.sub-type {
+    border: 1px solid lightgrey;
+    align: center;
+    justify-content: center;
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
+
+.plain-text {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.dashboard {
+    max-width: 1500px;
+}
+
+
+.dash-title {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.dash-text {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 0px;
+}

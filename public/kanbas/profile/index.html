@@ -1,61 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+        <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../navigation.css" rel="stylesheet"/>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
 </head>
 <body>
-
-<table border=0 width = 100%>
-    <tbody>
-    <!--first column -->
-    <tr>
-        <td style = "vertical-align: top">
-            <ul>
-                <li><a href= "index.html">Account</a></li>
-                <li><a href=# >Dashboard</a></li>
-                <li><a href="../second_column.html" >Courses</a></li>
-                <li><a href=# >Calendar</a></li>
-                <li><a href=# >Inbox</a></li>
-                <li><a href=# >History</a></li>
-                <li><a href=# >Studio</a></li>
-                <li><a href=# >Commons</a></li>
-                <li><a href=# >Help</a></li>
+<div class="wrapper  text-center">
+    <div class="row" >
+        <div class="column bg-color-black justify-content-center" id="sidebar">
+            <ul class="nav justify-content-center margins" id="menu">
+                <li><img src= "../../images/neu_logo.png" height="80px"> </li>
+                <div class="selected">
+                    <li><a href="#"><i class="fa-solid fa-user fa-2x" style = "color: grey"></i>
+                        <span> <p><a href="profile/index.html" class="links">Account</a></p></span></a></li>
+                </div>
+                <li><a href="../dashboard.html"><i class="fa-solid fa-gauge-high fa-2x" style = "color: red"></i>
+                    <span> <p><a href="../dashboard.html" class="links">Dashboard</a></p></span></a></li>
+                <li><a href="second_column.html"><i class="fa-solid fa-book fa-2x" style = "color: red"></i>
+                    <span><p> <a href="second_column.html" class="links">Courses</a></p></span></a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar fa-2x" style = "color: red"></i>
+                    <span> <p><a href="#" class="links">Calendar</a></p></span></a></li>
+                <li><a href="#"><i class="fa-solid fa-inbox fa-2x" style = "color: red"></i>
+                    <span> <p><a href="#" class="links">Inbox</a></p></span></a></li>
+                <li><a href="#"><i class="fa-solid fa-clock fa-2x" style = "color: red"></i>
+                    <span> <p><a href="#" class="links">History</a></p></span></a></li>
+                <li><a href="#"><i class="fa-solid fa-film fa-2x" style = "color: red"></i>
+                    <span> <p><a href="#" class="links">Studio</a></p></span></a></li>
+                <li><a href="#"><i class="fa-solid fa-square-up-right fa-2x" style = "color: red"></i>
+                    <span> <p><a href="#" class="links">Commons</a></p></span></a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-question fa-2x" style = "color: red"></i>
+                    <span><p><a href="#" class="links">Help</a></p></span></a></li>
             </ul>
-        </td>
-        <!--second column -->
-        <td style = "vertical-align: top">
-        <td valign = "top">
-        <ul>
-                <li><a href=# >Notifications</a></li>
-                <li><a href=# >Profile</a></li>
-                <li><a href=# >Files</a></li>
-                <li><a href=# >Settings</a></li>
-                <li><a href=# >ePortfolios</a></li>
-                <li><a href=# >Shared Content</a></li>
-                <li><a href=# >The Hub </a></li>
-                <li><a href=# >Qwickly Course Tools</a></li>
-                <li><a href=# >Global Announcements</a></li>
-
-            </ul>
-        </td>
-        <td>
-            <p style="font-size: 30px;"> Jose Annunziato </p>
-            <p style="font-size: 20px;"> Contact </p>
+        </div>
+        <div class="account-menu text-red">
+            <a href="#" class="list-group-item list-group-item-action">
+                Notifications</a>
+            <a href="#" class="list-group-item list-group-item-action selected-profile">
+                Profile</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                Files</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                Setting</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                ePortfolios </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                Shared Content</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                The Hub</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                Qwickly Course Tools</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                Global Announcements</a>
+        </div>
+        <div class="col account-main text-black">
+            <i class="fa-solid fa-user fa-10x" style="color: grey"></i>
+            <h1 class="top-left">Elisabeth Leung </h1> <br>
+            <p class = "title"> Contact </p>
             <p>No registered services, you can add some of the <a href = #> settings</a> page </p>
-            <p style="font-size: 20px;"> Biography </p>
+            <p class = "title"> Biography </p>
             <p> Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
-            <p style = "font-side: 20px;"> Links </p>
-            <a href =#> Youtube </a>
-        </td>
+            <p class = "title"> Links </p>
+            <i class="fa-solid fa-link"></i><a href =https://www.youtube.com/watch?v=xgY59LQfZSA&ab_channel=WebDevTV> Youtube </a>
+        </div>
+        <div class = "col edit-button">
+            <a href="edit.html" class="btn btn-light">
+                <i class="fa-solid fa-pencil"></i> Edit Profile
+            </a>
 
-        <td valign="top">
-            <form action = "edit.html">
-                <button>Edit Profile</button></a>
-            </form>
-        </td>
-    </tr>
-    </tbody>
-</table>
+
+        </div>
+    </div>
+</div>
+
+
 </body>
-</html>

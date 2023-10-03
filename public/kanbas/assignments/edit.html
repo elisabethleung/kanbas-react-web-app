@@ -1,156 +1,295 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+        <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../navigation.css" rel="stylesheet"/>
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-<table border=0 width = 100%>
-  <tbody>
-  <!--first column -->
-  <tr>
-    <td style = "vertical-align: top">
-      <ul>
-        <li><a href= "../profile/index.html">Account</a></li>
-        <li><a href=# >Dashboard</a></li>
-        <li><a href= "../second_column.html" >Courses</a></li>
-        <li><a href=# >Calendar</a></li>
-        <li><a href=# >Inbox</a></li>
-        <li><a href=# >History</a></li>
-        <li><a href=# >Studio</a></li>
-        <li><a href=# >Commons</a></li>
-        <li><a href=# >Help</a></li>
-      </ul>
-    </td>
-    <!--second column -->
-    <td style = "vertical-align: top">
-      <ul>
-        <li><a href="../home.html" >Home</a></li>
-        <li><a href=# >Modules</a></li>
-        <li><a href=# >Piazza</a></li>
-        <li><a href=# >Zoom Meetings</a></li>
-        <li><a href="index.html" >Assignments</a></li>
-        <li><a href=# >Quizzes</a></li>
-        <li><a href="../grades.html" >Grades</a></li>
-        <li><a href=# >People</a></li>
-        <li><a href=# >Panopto Video</a></li>
-        <li><a href=# >Discussions</a></li>
-        <li><a href=# >Announcements</a></li>
-        <li><a href=# >Pages</a></li>
-        <li><a href=# >Files</a></li>
-        <li><a href=# >Rubrics</a></li>
-        <li><a href=# >Outcomes</a></li>
-        <li><a href=# >Collaborations</a></li>
-        <li><a href=# >Syllabus</a></li>
-        <li><a href=# >Settings</a></li>
-      </ul>
-    </td>
-    <td style = "vertical-align: top">
-      <select id="speed_grader">
-        <option selected value="speed grader">Speed Grader </option>
-      </select>
-      <h2>Assignment Name</h2>
-        <label for="assignment_name"></label>
-        <input type="text" id="assignment_name" value="A1 - ENV + HTML"/> <br/>
-      <br/>
-        <textarea cols="20" rows="2">This is the assignment description. </textarea>
-      <br/>
-        <label for="assignment_points">Points </label> <br/>
-        <input type="number" id="assignment_points"
-               value="100"/> <br/>
-      <br/>
-      <label for="assignment_group">
-        Assignment Group
-      </label><br/>
-      <select id="assignment_group">
-        <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
-      </select>
-      <br/><br/>
-      <label for="display_grade">
-      Display Grade as
-      </label><br/>
-      <select id="display_grade">
-        <option selected value="PERCENTAGE">Percentage</option>
-      </select>
-      <br/><br/>
-      <label for="sub_type">
-        Submission Type
-      </label><br/>
-      <select id="sub_type">
-        <option selected value="online">Online</option>
-      </select>
-      <br/><br/>
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb course_breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="#" class="list-group-item" style = "color:red"> CS:4550 Web Development_Fall Semester 2023_Section 1</a> </li>
+    <li class="breadcrumb-item">Assignments </li>
+    <li class = "breadcrumb-item">A1</li>
+  </ol>
+</nav>
 
-      <label>Online Entry Options</label>
-      <br/>
-      <input type="checkbox" value="Text_entry"
-             name="check-assigntype" id="chkbox-txtentry"/>
-      <label for="chkbox-txtentry">Text Entry </label>    <br/>
-      <input type="checkbox" value="weburl"
-             name="check-assigntype" id="chkbox-weburl"/>
-      <label for="chkbox-weburl">Website URL </label>    <br/>
-      <input type="checkbox" value="media_record"
-             name="check-assigntype" id="chkbox-media" />
-      <label for="chkbox-media">Media Recordings</label> <br/>
-      <input type="checkbox" value="stud_anno"
-             name="check-assigntype" id="chkbox-stud"/>
-      <label for="chkbox-stud">Student Annotation</label>  <br/>
-      <input type="checkbox" value="file_upload"
-             name="check-assigntype" id="chkbox-file"/>
-      <label for="chkbox-file">File Uploads</label>
-      <br/><br/>
-      <label for="sub_attempts">
-        Submission Attempts
-      </label><br/>
-      <select id="sub_attempts">
-        <option selected value="Unlimited">Unlimited</option>
-      </select>
-      <br/><br/>
-      <label for="plag_review">
-        Plagiarism Review
-      </label><br/>
-      <select id="plag_review">
-        <option selected value="none">None</option>
-      </select>
-      <br/> <br/>
-      <label>Group assignment</label>
-      <br/>
-      <input type="checkbox"
-             name="check-group" id="chkbox-group"/>
-      <label for="chkbox-group"> This is a group assignment </label>  <br/> <br/>
-      <label>Peer Reviews</label>
-      <br/>
-      <input type="checkbox"
-             name="check-group" id="chkbox-peer"/>
-      <label for="chkbox-peer"> Require Peer Reviews </label>  <br/> <br/>
-      <a>Assign</a>
-      <form id="assign_to">
-        <label for="assign_to">Assign to </label> <br/>
-        <input type="text" id="assign_to_all"
-               value="Everyone"/> <br/>
-      </form> <br/>
-      <label for="due_date"> Due </label> <br/>
-      <input type="date"
-             id="due_date"
-             value="2021-01-21"/><br/> <br/>
-      <label for="available_from"> Available from </label>  <br/>
-      <input type="date"
-             id="available_from"
-             value="2021-01-21"/><br/> <br/>
-      <label for="available_until"> Until </label>  <br/>
-      <input type="date"
-             id="available_until"
-             value="2021-01-21"/><br/> <br/>
-      <button> Cancel </button>
-      <button> Save </button>
+<div class="wrapper-modules text-center">
+  <div class="row" >
+    <div class="column bg-color-black justify-content-center" id="sidebar">
+      <ul class="nav justify-content-center margins" id="menu">
+        <li><img src= "../../images/neu_logo.png" height="80px"> </li>
+        <div class="selected">
+          <li><a href="#"><i class="fa-solid fa-user fa-2x" style = "color: grey"></i>
+            <span> <p><a href="profile/index.html" class="links">Account</a></p></span></a></li>
+        </div>
+        <li><a href="../dashboard.html"><i class="fa-solid fa-gauge-high fa-2x" style = "color: red"></i>
+          <span> <p><a href="../dashboard.html" class="links">Dashboard</a></p></span></a></li>
 
-    </td>
-  </tr>
-  </tbody>
-</table>
+        <li><a href="#"><i class="fa-solid fa-book fa-2x" style = "color: red"></i>
+          <span><p> <a href="#" class="links">Courses</a></p></span></a></li>
+
+        <li><a href="#"><i class="fa-solid fa-calendar fa-2x" style = "color: red"></i>
+          <span> <p><a href="#" class="links">Calendar</a></p></span></a></li>
+        <li><a href="#"><i class="fa-solid fa-inbox fa-2x" style = "color: red"></i>
+          <span> <p><a href="#" class="links">Inbox</a></p></span></a></li>
+        <li><a href="#"><i class="fa-solid fa-clock fa-2x" style = "color: red"></i>
+          <span> <p><a href="#" class="links">History</a></p></span></a></li>
+        <li><a href="#"><i class="fa-solid fa-film fa-2x" style = "color: red"></i>
+          <span> <p><a href="#" class="links">Studio</a></p></span></a></li>
+        <li><a href="#"><i class="fa-solid fa-square-up-right fa-2x" style = "color: red"></i>
+          <span> <p><a href="#" class="links">Commons</a></p></span></a></li>
+        <li><a href="#"><i class="fa-solid fa-circle-question fa-2x" style = "color: red"></i>
+          <span><p><a href="#" class="links">Help</a></p></span></a></li>
+      </ul>
+    </div>
+    <div class="account-menu text-red">
+      <a href="#" class="list-group-item list-group-item-action">
+        Home</a>
+      <a href="#" class="list-group-item list-group-item-action ">
+        Modules </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Piazza </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Zoom Meetings</a>
+      <a href="#" class="list-group-item list-group-item-action selected-profile">
+        Assignments </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Quizzes</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Grades</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        People</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Panopto Video</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Discussions</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Announcements</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Pages</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Files</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Rubrics</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Outcomes</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Collaborations</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Syllabus</a>
+      <a href="#" class="list-group-item list-group-item-action">
+        Settings</a>
+    </div>
+    <div class = "col">
+      <div class = "row assign-edit-text">
+        <label for="a_name" class="form-label"> Assignment Name  </label>
+        <input type="text" class="form-control" id="a_name" value = "A1">
+        <span><br></span>
+        <textarea class="form-control" id="biography" rows = "3"> This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify. </textarea>
+      </div>
+
+      <div class = "row">
+        <span><br></span>
+        <div class = "col-3">
+          <div class = "row assign-edit-text">
+            <label for="p_name" class="form-label"> Points </label>
+          </div>
+        </div>
+          <div class = "col-6">
+            <input type="text" class="form-control" id="p_name">
+              </div>
+            </div>
+
+      <div class = "row">
+        <span><br></span>
+        <div class = "col-3">
+          <div class = "row assign-edit-text">
+            <label for="assign_group" class="form-label"> Assignment Group </label>
+          </div>
+        </div>
+        <div class = "col-6">
+          <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle float-end assign-dropdown" data-toggle="dropdown" id = "assign_group">
+              ASSIGNMENTS </a></button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">GRADES </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "row">
+        <span><br></span>
+        <div class = "col-3">
+          <div class = "row assign-edit-text">
+            <label for="assign_group" class="form-label"> Display Grade as </label>
+          </div>
+        </div>
+        <div class = "col-6">
+          <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle float-end assign-dropdown" data-toggle="dropdown" id = "percen_group">
+              Percentages </a></button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Points </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "row">
+        <span><br></span>
+        <div class = "col-3">
+          </div>
+        <div class = "col-6 check-center">
+          <input class="form-check-input "
+                 type="checkbox" id="r6"/>
+          <label class="form-check-label check-center" for="r6">
+            Do not count this assignment towards the final grade</label>
+        </div>
+      </div>
+
+      <div class = "row">
+        <span><br></span>
+        <div class = "col-3">
+          <div class = "row assign-edit-text">
+            <label for="assign_group" class="form-label"> Submission Type </label>
+          </div>
+        </div>
+          <div class = "col-6 sub-type assign-edit-text">
+            <div class="dropdown" style = "padding-top: 10px">
+              <button type="button" class="btn dropdown-toggle assign-dropdown" data-toggle="dropdown" id = "online">
+                Online </a></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">External </a>
+              </div>
+            </div> <br>
+            <p class = "font-weight-bold"> Online Entry Options </p> <br>
+            <input class="form-check-input "
+                   type="checkbox" id="text" checked/>
+            <label class="form-check-label check-center" for="text">
+              Text Entry </label>
+            <br><br>
+            <input class="form-check-input "
+                   type="checkbox" id="weburl" checked/>
+            <label class="form-check-label check-center" for="weburl">
+              Website URL </label>
+            <br><br>
+            <input class="form-check-input"
+                   type="checkbox" id="mediarecord" checked/>
+            <label class="form-check-label check-center" for="mediarecord">
+              Media Recordings </label>
+            <br><br>
+            <input class="form-check-input "
+                   type="checkbox" id="studentano"/>
+            <label class="form-check-label check-center" for="studentano">
+              Student Annotation </label>
+            <br><br>
+            <input class="form-check-input "
+                   type="checkbox" id="fileuplo"/>
+            <label class="form-check-label check-center" for="fileuplo">
+              File Uploads </label>
+            <br>
+          </div>
+      </div>
+
+      <div class = "row assign-edit-text">
+        <span><br></span>
+        <div class = "col-3">
+          Submission Attempts
+        </div>
+        <div class = "col-6 assign-edit-text">
+          <div class="dropdown float-end">
+            <button type="button" class="btn dropdown-toggle float-end assign-dropdown" data-toggle="dropdown" id = "subattemps">
+              Unlimited </a></button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">One </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "row assign-edit-text">
+        <span><br></span>
+        <div class = "col-3">
+          Plagerism Review
+        </div>
+        <div class = "col-6 assign-edit-text">
+          <div class="dropdown float-end">
+            <button type="button" class="btn dropdown-toggle float-end assign-dropdown" data-toggle="dropdown" id = "plager">None</a></button>
+            <div class="dropdown-menu"> <a class="dropdown-item" href="#">Yes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "row assign-edit-text">
+        <span><br></span>
+        <div class = "col-3">
+          Group Assignment
+        </div>
+        <div class = "col-6 check-center">
+          <input class="form-check-input "
+                 type="checkbox" id="groupa"/>
+          <label class="form-check-label check-center" for="groupa">
+            This is a group assignment</label>
+        </div>
+      </div>
+
+      <div class = "row assign-edit-text">
+        <span><br></span>
+        <div class = "col-3">
+          Peer Reviews
+        </div>
+        <div class = "col-6 check-center">
+          <input class="form-check-input "
+                 type="checkbox" id="peerr"/>
+          <label class="form-check-label check-center" for="peerr">
+            Require Peer Reviews</label>
+        </div>
+      </div>
+
+        <div class = "row assign-edit-text">
+          <span><br></span>
+          <div class = "col-3">
+            Assign
+          </div>
+          <div class = "col-6 sub-type assign-edit-text">
+            <label for="assignto"> Assign to </label> <br>
+            <div class="dropdown float-left">
+              <button type="button" class="btn dropdown-toggle float-end assign-dropdown" data-toggle="dropdown" id = "assignto">
+                Everyone</a></button>
+              <div class="dropdown-menu"> <a class="dropdown-item" href="#">User1</a>
+              </div>
+            </div>
+            <br> <br>
+            <label for="due"> Due </label> <br>
+            <input type="date" id="due" placeholder="01/01/2023"/> <br/>
+            <br/>
+            <div class = "row">
+                <div class = "col-6">
+                  <label for="availfrom"> Available From </label> <br>
+                  <input type="date" id="availfrom" placeholder="01/01/2023"/>
+                </div>
+                <div class = "col-6">
+                  <label for="availuntil"> Until </label> <br>
+                  <input type="date" id="availuntil" placeholder="01/01/2023"/>
+                  <br>
+                </div>
+            </div>
+          </div>
+        </div>
+          <span><br></span>
+      <div class = "buttons">
+        <a href="index.html" class="btn btn-light"> Cancel </a>
+        <a href="index.html" class="btn btn-red"> Save </a>
+      </div>
+     </div>
+    </div>
+    </div>
+  </div>
 </body>
-</html>
-
-
-<!--use <div>-->
 
