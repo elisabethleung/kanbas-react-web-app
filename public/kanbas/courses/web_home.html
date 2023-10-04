@@ -13,39 +13,39 @@
 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb course_breadcrumb">
         <li class="breadcrumb-item">
-            <a href="#" class="list-group-item" style = "color:red"> CS:4550 Web Development_Fall Semester 2023_Section 1</a> </li>
+            <a href="#" class="list-group-item" style = "color: #d80215"> CS:4550 Web Development_Fall Semester 2023_Section 1</a> </li>
         <li class="breadcrumb-item">Home </li>
     </ol>
 </nav>
 
 <div class="wrapper-modules text-center">
     <div class="row" >
-        <div class="column bg-color-black justify-content-center" id="sidebar">
+        <div class="column bg-color-black justify-content-center d-none d-lg-block" id="sidebar">
             <ul class="nav justify-content-center margins" id="menu">
                 <li><img src= "../../images/neu_logo.png" height="80px"> </li>
                 <div class="selected">
-                    <li><a href="#"><i class="fa-solid fa-user fa-2x" style = "color: grey"></i>
-                        <span> <p><a href="profile/index.html" class="links">Account</a></p></span></a></li>
+                    <li><a href="../profile/index.html"><i class="fa-solid fa-user fa-2x" style = "color: grey"></i>
+                        <span> <p><a href="../profile/index.html" class="links">Account</a></p></span></a></li>
                 </div>
-                <li><a href="../dashboard.html"><i class="fa-solid fa-gauge-high fa-2x" style = "color: red"></i>
+                <li><a href="../dashboard.html"><i class="fa-solid fa-gauge-high fa-2x" style = "color: #d80215"></i>
                     <span> <p><a href="../dashboard.html" class="links">Dashboard</a></p></span></a></li>
-                <li><a href="second_column.html"><i class="fa-solid fa-book fa-2x" style = "color: red"></i>
+                <li><a href="second_column.html"><i class="fa-solid fa-book fa-2x" style = "color: #d80215"></i>
                     <span><p> <a href="second_column.html" class="links">Courses</a></p></span></a></li>
-                <li><a href="#"><i class="fa-solid fa-calendar fa-2x" style = "color: red"></i>
+                <li><a href="#"><i class="fa-solid fa-calendar fa-2x" style = "color: #d80215"></i>
                     <span> <p><a href="#" class="links">Calendar</a></p></span></a></li>
-                <li><a href="#"><i class="fa-solid fa-inbox fa-2x" style = "color: red"></i>
+                <li><a href="#"><i class="fa-solid fa-inbox fa-2x" style = "color: #d80215"></i>
                     <span> <p><a href="#" class="links">Inbox</a></p></span></a></li>
-                <li><a href="#"><i class="fa-solid fa-clock fa-2x" style = "color: red"></i>
+                <li><a href="#"><i class="fa-solid fa-clock fa-2x" style = "color: #d80215"></i>
                     <span> <p><a href="#" class="links">History</a></p></span></a></li>
-                <li><a href="#"><i class="fa-solid fa-film fa-2x" style = "color: red"></i>
+                <li><a href="#"><i class="fa-solid fa-film fa-2x" style = "color: #d80215"></i>
                     <span> <p><a href="#" class="links">Studio</a></p></span></a></li>
-                <li><a href="#"><i class="fa-solid fa-square-up-right fa-2x" style = "color: red"></i>
+                <li><a href="#"><i class="fa-solid fa-square-up-right fa-2x" style = "color:#d80215"></i>
                     <span> <p><a href="#" class="links">Commons</a></p></span></a></li>
-                <li><a href="#"><i class="fa-solid fa-circle-question fa-2x" style = "color: red"></i>
+                <li><a href="#"><i class="fa-solid fa-circle-question fa-2x" style = "color: #d80215"></i>
                     <span><p><a href="#" class="links">Help</a></p></span></a></li>
             </ul>
         </div>
-        <div class="account-menu text-red">
+        <div class="account-menu text-red d-none d-lg-block">
             <a href="#" class="list-group-item list-group-item-action selected-profile">
                 Home</a>
             <a href="#" class="list-group-item list-group-item-action ">
@@ -54,11 +54,11 @@
                 Piazza </a>
             <a href="#" class="list-group-item list-group-item-action">
                 Zoom Meetings</a>
-            <a href="#" class="list-group-item list-group-item-action">
+            <a href="../assignments/index.html" class="list-group-item list-group-item-action">
                 Assignments </a>
             <a href="#" class="list-group-item list-group-item-action">
                 Quizzes</a>
-            <a href="#" class="list-group-item list-group-item-action">
+            <a href="grades.html" class="list-group-item list-group-item-action">
                 Grades</a>
             <a href="#" class="list-group-item list-group-item-action">
                 People</a>
@@ -84,8 +84,13 @@
                 Settings</a>
         </div>
 
-        <div class="col-6 module-list">
 
+        <div class="col-8 col-xl-6 col-12-md module-list">
+            <a href="kanbas_nav.html" class="btn btn-light float-left d-none d-md-block d-lg-none"><i class="fa fa-grip-lines "></i></a>
+            <a href="course_nav.html" class="btn btn-light float-right d-none d-md-block d-lg-none"><i class="fa fa-ellipsis-v"></i></a>
+
+
+            <br><br>
             <a href="#" class="btn btn-red float-end"> <i class="fa fa-plus"></i> Module</a>
             <div class="dropdown">
                 <button type="button" class="btn btn-light dropdown-toggle float-end" data-toggle="dropdown">
@@ -99,102 +104,103 @@
             <a href="#" class="btn btn-light float-end">Collapse All</a>
 
 
+
+
             <br> <br>
 
             <ul class="list-group text-red " style="list-style-type:none;">
                 <p class="list-group-item  list-group-item-secondary module-links-title">
                     Week 0 - INTRO</p>
-
                 <li class="list-group-item module-links-title">
-                    <i class="fa fa-ellipsis-v float-left left-icon"></i>
+                    <i class="fa fa-grip-vertical float-left left-icon ellipsis"></i>
                     LEARNING OBJECTIVES
-                    <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                    <i class="fa fa-grip-vertical float-end end-icon"></i>
                     <i class="fa fa-check-circle check float-end"></i>
                 </li>
 
                 <li class="list-group-item module">
-                    <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                    <i class="fa fa-grip-vertical float-left left-icon"> </i>
                     <p class = "module-text"> Introduction to the course
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i>
                 </li>
 
                 <li class="list-group-item module">
-                    <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                    <i class="fa fa-grip-vertical float-left left-icon"> </i>
                     <p class = "module-text"> Learn what is Web Development
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i>
                 </li>
 
                 <li class="list-group-item module">
-                    <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                    <i class="fa fa-grip-vertical float-left left-icon"> </i>
                     <p class = "module-text"> Creating a development environment
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i>  </p>
                 </li>
 
                 <li class="list-group-item module">
-                    <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                    <i class="fa fa-grip-vertical float-left left-icon"> </i>
                     <p class = "module-text"> Creating a Web Application
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i>  </p>
                 </li>
 
                 <li class="list-group-item module-links-title">
-                    <i class="fa fa-ellipsis-v float-left left-icon"></i>
+                    <i class="fa fa-grip-vertical float-left left-icon"></i>
                     READING
-                    <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                    <i class="fa fa-grip-vertical float-end end-icon"></i>
                     <i class="fa fa-check-circle check float-end"></i>
                 </li>
 
                 <li class="list-group-item module">
-                    <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                    <i class="fa fa-grip-vertical float-left left-icon"> </i>
                     <p class = "module-text"> Full Stack Developer - Chapter 1 - Introduction
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i> </p>
                 </li>
 
                 <li class="list-group-item module">
-                    <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                    <i class="fa fa-grip-vertical float-left left-icon"> </i>
                     <p class = "module-text"> Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i></p>
                 </li>
 
                 <li class="list-group-item module-links-title">
-                    <i class="fa fa-ellipsis-v float-left left-icon"></i>
+                    <i class="fa fa-grip-vertical float-left left-icon"></i>
                     SLIDES
-                    <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                    <i class="fa fa-grip-vertical float-end end-icon"></i>
                     <i class="fa fa-check-circle check float-end"></i>
                 </li>
 
                 <li class="list-group-item list-group-item-action module-links">
-                    <i class="fa fa-ellipsis-v float-left left-icon" style = "color:black"> </i>
+                    <i class="fa fa-grip-vertical float-left left-icon" style = "color:black"> </i>
                     <p style="text-decoration: none" class = "module-links-text">
                         <a href = "https://docs.google.com/presentation/d/1yb_fQd5MhVuFczb5F5II0CoDkVJALFqxUnuwPAXiOAU/edit" class = "module-links-text">
                             Introduction to Web Development </a>
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i>  </p>
                 </li>
 
 
                 <li class="list-group-item list-group-item-action module-links">
-                    <i class="fa fa-ellipsis-v float-left left-icon" style = "color:black"> </i>
+                    <i class="fa fa-grip-vertical float-left left-icon" style = "color:black"> </i>
                     <p style="text-decoration: none" class = "module-links-text">
                         <a href = "https://docs.google.com/presentation/d/16yDwIH8np-tQL85g4bpmrsDfO8LaW38jr-fMQirLnoQ/edit#slide=id.p"
                            class = "module-links-text">
                             Creating an HTTP server with Node.js</a>
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i> </p>
                 </li>
 
                 <li class="list-group-item list-group-item-action module-links">
-                    <i class="fa fa-ellipsis-v float-left left-icon" style = "color:black"> </i>
+                    <i class="fa fa-grip-vertical float-left left-icon" style = "color:black"> </i>
                     <p style="text-decoration: none" class = "module-links-text">
                         <a href = "https://docs.google.com/presentation/d/10B3jLiJ8-HMsA6TPq9JuWfJzsvX9SFnYVuhthrQbFwU/edit#slide=id.p"
                            class = "module-links-text">
                             Creating a React Application </a>
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i>  </p>
                 </li>
             </ul>
@@ -208,125 +214,125 @@
                         Week 1- HTML </p>
 
                     <li class="list-group-item module-links-title">
-                        <i class="fa fa-ellipsis-v float-left left-icon"></i>
+                        <i class="fa fa-grip-vertical float-left left-icon"></i>
                         LEARNING OBJECTIVES
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i>
                     </li>
 
                     <li class="list-group-item module">
-                        <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                        <i class="fa fa-grip-vertical float-left left-icon"> </i>
                         <p class = "module-text"> Learn how to create user interfaces with HTML
-                            <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                            <i class="fa fa-grip-vertical float-end end-icon"></i>
                             <i class="fa fa-check-circle check float-end"></i>
                     </li>
 
                     <li class="list-group-item module">
-                        <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                        <i class="fa fa-grip-vertical float-left left-icon"> </i>
                         <p class = "module-text"> Keep working on assignment 1
-                            <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                            <i class="fa fa-grip-vertical float-end end-icon"></i>
                             <i class="fa fa-check-circle check float-end"></i>  </p>
                     </li>
 
                     <li class="list-group-item module">
-                        <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                        <i class="fa fa-grip-vertical float-left left-icon"> </i>
                         <p class = "module-text"> Deploy the assignment to Netlify
-                            <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                            <i class="fa fa-grip-vertical float-end end-icon"></i>
                             <i class="fa fa-check-circle check float-end"></i>  </p>
                     </li>
 
                     <li class="list-group-item module-links-title">
-                        <i class="fa fa-ellipsis-v float-left left-icon"></i>
+                        <i class="fa fa-grip-vertical float-left left-icon"></i>
                         READING
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i>
                     </li>
 
                     <li class="list-group-item module">
-                        <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                        <i class="fa fa-grip-vertical float-left left-icon"> </i>
                         <p class = "module-text"> Full Stack Developer - Chapter 1 - Introduction
-                            <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                            <i class="fa fa-grip-vertical float-end end-icon"></i>
                             <i class="fa fa-check-circle check float-end"></i>
                     </li>
                     <li class="list-group-item module">
-                        <i class="fa fa-ellipsis-v float-left left-icon"> </i>
+                        <i class="fa fa-grip-vertical float-left left-icon"> </i>
                         <p class = "module-text"> Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML
-                            <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                            <i class="fa fa-grip-vertical float-end end-icon"></i>
                             <i class="fa fa-check-circle check float-end"></i>
                     </li>
                     <li class="list-group-item module-links-title">
-                        <i class="fa fa-ellipsis-v float-left left-icon"></i>
+                        <i class="fa fa-grip-vertical float-left left-icon"></i>
                         SLIDES
-                        <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                        <i class="fa fa-grip-vertical float-end end-icon"></i>
                         <i class="fa fa-check-circle check float-end"></i>
                     </li>
                     <li class="list-group-item list-group-item-action module-links">
-                        <i class="fa fa-ellipsis-v float-left left-icon" style = "color:black"> </i>
+                        <i class="fa fa-grip-vertical float-left left-icon" style = "color:black"> </i>
                         <p style="text-decoration: none" class = "module-links-text">
                             <a href = "https://docs.google.com/presentation/d/1EgHSRyWc5ylFgKEOaiKnQVTV3QT_FL2M6w3EjeKRh64/edit#slide=id.g4097894cfb_0_0"
                                class = "module-links-text">
                                 Introduction to HTML and the DOM</a>
-                            <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                            <i class="fa fa-grip-vertical float-end end-icon"></i>
                             <i class="fa fa-check-circle check float-end"></i>  </p>
                     </li>
 
                     <li class="list-group-item list-group-item-action module-links">
-                        <i class="fa fa-ellipsis-v float-left left-icon" style = "color:black"> </i>
+                        <i class="fa fa-grip-vertical float-left left-icon" style = "color:black"> </i>
                         <p style="text-decoration: none" class = "module-links-text">
                             <a href = "https://docs.google.com/presentation/d/1RtMNp8HTDiGi-H8G-n1u67M3kL4BNRoopOXLG-fPZH0/edit#slide=id.g41cb8fe74c_0_5"
                                class = "module-links-text">
                                 Formatting Web Content with Headers and Paragraphs </a>
-                            <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                            <i class="fa fa-grip-vertical float-end end-icon"></i>
                             <i class="fa fa-check-circle check float-end"></i>  </p>
                     </li>
 
                     <li class="list-group-item list-group-item-action module-links">
-                        <i class="fa fa-ellipsis-v float-left left-icon" style = "color:black"> </i>
+                        <i class="fa fa-grip-vertical float-left left-icon" style = "color:black"> </i>
                         <p style="text-decoration: none" class = "module-links-text">
                             <a href = "https://docs.google.com/presentation/d/1jzWnHG3Xn6UZ5FAqNfC3kqA87XbwhEXHSvWGIUzKS7c/edit#slide=id.g4a9f8bd000_0_8"
                                class = "module-links-text">
                                 Creating Web Forms </a>
-                            <i class="fa fa-ellipsis-v float-end end-icon"></i>
+                            <i class="fa fa-grip-vertical float-end end-icon"></i>
                             <i class="fa fa-check-circle check float-end"></i>  </p>
                     </li>
                 </ul>
             </ul>
         </div>
 
-        <div class="col float-end">
+        <div class="col float-end d-none d-xl-block">
             <div class = "btn-home">
-                <a href="index.html" class="btn btn-light center">
+                <a href="#" class="btn btn-light center">
                     <i class="fa-solid fa-ban"></i> Unpublish
                 </a>
-                <a href="index.html" class="btn btn-light disabled center" style = "background-color:seagreen" style = "color: white">
+                <a href="#" class="btn btn-light disabled center" style = "background-color:seagreen" style = "color: white">
                     <i class="fa-solid fa-check-circle" style = "color: white"></i> Published
                 </a>
                 <br> <br>
-                <a href="index.html" class="btn btn-light btn-home">
+                <a href="#" class="btn btn-light btn-home">
                     <i class="fa-solid fa-file-import"></i> Import Existing Content
                 </a>
                 <br>
-                <a href="index.html" class="btn btn-light btn-home">
+                <a href="#" class="btn btn-light btn-home">
                     <i class="fa-solid fa-upload"></i> Import from Commons
                 </a>
                 <br>
-                <a href="index.html" class="btn btn-light btn-home">
+                <a href="#" class="btn btn-light btn-home">
                     <i class="fa-solid fa-bullseye"></i> Choose Home Page
                 </a>
                 <br>
-                <a href="index.html" class="btn btn-light btn-home">
+                <a href="#" class="btn btn-light btn-home">
                     <i class="fa-solid fa-chart-simple"></i> View Course Streams
                 </a>
                 <br>
-                <a href="index.html" class="btn btn-light btn-home">
+                <a href="#" class="btn btn-light btn-home">
                     <i class="fa-solid fa-bullhorn"></i> New Announcement
                 </a>
                 <br>
-                <a href="index.html" class="btn btn-light btn-home">
+                <a href="#" class="btn btn-light btn-home">
                     <i class="fa-solid fa-chart-simple"></i> New Analytics
                 </a>
                 <br>
-                <a href="index.html" class="btn btn-light btn-home">
+                <a href="#" class="btn btn-light btn-home">
                     <i class="fa-solid fa-bell"></i> View Course Notifications
                 </a>
             </div>
