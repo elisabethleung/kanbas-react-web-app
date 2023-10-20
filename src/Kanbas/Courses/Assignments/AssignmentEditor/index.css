@@ -1,0 +1,16 @@
+.btn-custom2 {
+    background-color: lightgrey !important;
+    color: black !important;
+    border: 1px solid white !important;
+    text-align: left !important;
+    float: right;
+
+}
+.btn-custom3 {
+    background-color:  #d80215 !important;
+    color: white !important;
+    border: 1px solid white !important;
+    text-align: left !important;
+    float: right;
+
+}
