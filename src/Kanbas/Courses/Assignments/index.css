@@ -1,0 +1,33 @@
+.btn-custom2 {
+    background-color: lightgrey !important;
+    color: black !important;
+    border: 1px solid white !important;
+    text-align: left !important;
+    float: right;
+
+}
+.btn-custom3 {
+    background-color:  #d80215 !important;
+    color: white !important;
+    border: 1px solid white !important;
+    text-align: left !important;
+    float: right;
+
+}
+
+.assign-text {
+    width: 200px !important;
+    float: left;
+}
+
+.end-icon {
+    /*padding-left: 5px;*/
+    align-content: center;
+    /*margin-left: 5px;*/
+    vertical-align: middle;
+    color: black;
+    align: center;
+    /*padding-bottom: 4px;*/
+    /*padding-top: 4px;*/
+    float: left;
+}

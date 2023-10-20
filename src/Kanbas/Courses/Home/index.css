@@ -1,0 +1,23 @@
+
+.btn-home {
+    width: 250px;
+    text-align: left;
+    color: grey;
+}
+
+
+.btn-custom {
+    background-color: lightgrey !important;
+    color: black !important;
+    width: 250px;
+    border: 1px solid white !important;
+    text-align: left !important;
+}
+
+
+.icon {
+    align-content: center;
+    justify-content: center;
+}
+.breadcrumb-item+.breadcrumb-item::before{content:var(--bs-breadcrumb-divider,">") !important ;}
+

@@ -1,0 +1,30 @@
+.module-links-title {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+     /*border: 1px solid grey;*/
+    margin-bottom: 100px;
+    background-color: lightgrey;
+}
+
+.module-links {
+    font-size: 15px;
+    color:  #d80215;
+    text-decoration: none;
+    text-align: left;
+    /*border: 1px solid grey;*/
+    margin-bottom: 0px;
+}
+
+.list-group-item {
+    margin-bottom: 0px;
+    border: 0px solid white;
+}
+
+.group {
+    width: 600px;
+    padding-bottom: 10px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{content:var(--bs-breadcrumb-divider,">") !important ;}
