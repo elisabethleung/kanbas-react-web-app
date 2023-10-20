@@ -19,8 +19,11 @@ function Grades() {
                 <Breadcrumb.Item active>{"Grades"}</Breadcrumb.Item>
             </Breadcrumb>
 
-            <Button className = "btn-custom2"> <TbFileExport/> Export </Button>
-            <Button className = "btn-custom2"> <FaFileImport/> Import </Button>
+            <div>
+                <h3 className = "float-left">Gradebook</h3>
+                <Button className = "btn-custom2"> <TbFileExport/> Export </Button>
+                <Button className = "btn-custom2"> <FaFileImport/> Import </Button>
+            </div>
 
             <br/><br/>
 
