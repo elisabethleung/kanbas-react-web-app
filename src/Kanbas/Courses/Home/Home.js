@@ -1,5 +1,4 @@
 import ModuleList from "../Modules/ModuleList";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
 import db from "../../Database";
 import { useParams } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
@@ -17,10 +16,6 @@ function Home() {
 
     return (
     <div>
-        <Breadcrumb style={{size: 20}}>
-            <Breadcrumb.Item> {course.name}</Breadcrumb.Item>
-            <Breadcrumb.Item active>{"Home"}</Breadcrumb.Item>
-        </Breadcrumb>
 
         <div className="row">
             <div className="col-8">

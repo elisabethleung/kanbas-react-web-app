@@ -1,0 +1,43 @@
+.card{
+  width: 300px !important;
+}
+
+.wd-fixed-top-margin {
+  margin-top: 70px;
+}
+
+.wd-card-header {
+  height: 125px;
+  background-color: darkolivegreen;
+}
+
+.card-title {
+  color: darkolivegreen !important;
+  text-decoration: none;
+}
+
+.btn-delete-dash {
+  background-color:  #d80215 !important;
+  color: white !important;
+  border: 1px solid white !important;
+  float: right !important;
+}
+
+.btn-edit-dash {
+  background-color: lightgrey !important;
+  color: black !important;
+  border: 1px solid white !important;
+  float: left !important;
+}
+
+.wd-dash-ellipse {
+  color: white;
+  float: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.dash-input {
+  width:250px !important;
+  margin: 5px;
+}

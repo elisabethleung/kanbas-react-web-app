@@ -1,21 +1,31 @@
-import ModuleList from "./ModuleList";
+import ModuleList from "./ModuleList"
+import { AiOutlineCheckCircle, AiOutlinePlus } from "react-icons/ai"
+import { FaEllipsisV } from 'react-icons/fa'
+import Dropdown from 'react-bootstrap/Dropdown'
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import './index.css'
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import db from "../../Database";
-import {useParams} from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
-function Modules() {
-    const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
+
+function Modules ({course}) {
     return (
-        <div>
-            <Breadcrumb style={{size: 20}}>
-                <Breadcrumb.Item> {course.name}</Breadcrumb.Item>
-                <Breadcrumb.Item active> {"Modules"}</Breadcrumb.Item>
-            </Breadcrumb>
+        <div className="col-11">
 
             <h2>Modules</h2>
-            <ModuleList />
+            <div className= "row">
+                <Button className='btn-menu col-2'>Collapse All</Button>
+                <Button className='btn-menu col-2'>View Progress</Button>
+                <Button className='btn-menu col-2'><AiOutlineCheckCircle style={{ color: "#90EE90" }} />Publish All </Button>
+                <Button className="btn-menu col-2"><AiOutlinePlus />Module</Button>
+                <Button className='btn-menu col-1'><FaEllipsisV /></Button>
+                <hr />
+            </div>
+
+            <div>
+                <ModuleList />
+            </div>
         </div>
-    );
+    )
 }
-export default Modules;
+export default Modules

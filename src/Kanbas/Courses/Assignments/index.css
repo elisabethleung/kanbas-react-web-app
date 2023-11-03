@@ -3,7 +3,8 @@
     color: black !important;
     border: 1px solid white !important;
     text-align: left !important;
-    float: right;
+    float: right !important;
+    text-decoration: none;
 
 }
 .btn-custom3 {
@@ -30,4 +31,12 @@
     /*padding-bottom: 4px;*/
     /*padding-top: 4px;*/
     float: left;
+}
+
+.search {
+    float: left;
+}
+
+.top_buttons {
+    float: right;
 }

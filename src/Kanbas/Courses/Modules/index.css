@@ -19,12 +19,73 @@
 
 .list-group-item {
     margin-bottom: 0px;
-    border: 0px solid white;
+    border: 0px solid white ;
 }
 
 .group {
     width: 600px;
     padding-bottom: 10px;
+}
+
+.btn-add {
+    background-color: lightgrey !important;
+    color: black !important;
+    border: 1px solid white !important;
+    text-align: center !important;
+    justify-content: center !important;
+    float: left !important;
+    width: 60px !important;
+}
+
+.btn-update{
+    background-color: lightgrey !important;
+    color: black !important;
+    border: 1px solid white !important;
+    text-align: center !important;
+    justify-content: center !important;
+    float: left !important;
+    width: 80px !important;
+}
+
+.btn-delete {
+    background-color: #d80215 !important;
+    color: black !important;
+    border: 1px solid lightgrey !important;
+    text-align: center !important;
+    justify-content: center;
+    float: right !important;
+}
+
+.btn-edit {
+    background-color: grey !important;
+    color: black !important;
+    border: 1px solid grey !important;
+    text-align: center !important;
+    justify-content: center;
+    float: right !important;
+}
+
+.btn-menu {
+    background-color: lightgrey !important;
+    color: black !important;
+    border: 1px solid white !important;
+    text-align: center !important;
+    justify-content: center;
+    float: left !important;
+}
+
+
+.list-group {
+    border: 1px solid white !important;
+}
+
+
+.text-entry {
+    margin: 5px;
+}
+
+.edit_inputs {
+    padding-left: 10px;
 }
 
 .breadcrumb-item+.breadcrumb-item::before{content:var(--bs-breadcrumb-divider,">") !important ;}
