@@ -1,59 +1,85 @@
-import React from "react";
-import { Link, useParams } from "react-router-dom";
-import db from "../../Database";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
-import ListGroup from 'react-bootstrap/ListGroup';
+import React, { useState } from 'react'
+import { Link, useParams } from "react-router-dom"
+import db from "../../Database"
 import Button from "react-bootstrap/Button";
-import {AiOutlinePlus} from "react-icons/ai";
+import { FaEllipsisV } from "react-icons/fa"
+import { AiOutlinePlus } from "react-icons/ai"
 import "./index.css"
-import {BiDotsVerticalRounded} from "react-icons/bi";
-import { PiDotsSixVerticalBold} from "react-icons/pi";
+import { useSelector, useDispatch } from "react-redux"
+import {
+    addAssignment,
+    deleteAssignment,
+    updateAssignment,
+    setAssignment,
+} from "./assignmentReducer"
+import {PiDotsSixVerticalBold} from "react-icons/pi";
 
-function Assignments() {
-    const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
-    const assignments = db.assignments;
-    const courseAssignments = assignments.filter(
-        (assignment) => assignment.course === courseId
-    );
+
+function Assignments () {
+    const { courseId } = useParams()
+    const assignments = useSelector((state) => state.assignmentReducer.assignments.filter(
+        (assignment) => assignment.course === courseId))
+    const assignment = useSelector((state) => state.assignmentReducer.assignment)
+    const dispatch = useDispatch()
+    const handleDelete = (assignmentId) => {
+        const isConfirmed = window.confirm(
+            "Are you sure you want to remove the assignment?"
+        )
+        if (isConfirmed) {
+            dispatch(deleteAssignment(assignmentId))
+        }
+    }
+
     return (
-        <div>
-            <Breadcrumb style={{size: 20}}>
-                <Breadcrumb.Item> {course.name}</Breadcrumb.Item>
-                <Breadcrumb.Item active>{"Assignments"}</Breadcrumb.Item>
-            </Breadcrumb>
-            {/*<h2>Assignments for {courseId}: </h2>*/}
-
-            <div className="list-group col-8">
-
-                <div>
+        <div className= "col-8">
+            <div className = "row">
+                <div className = "search">
                     <input className="form-control assign-text" placeholder="Search Assignments"  />
-
-                    <Button className = "btn-custom2"> <BiDotsVerticalRounded/> </Button>
-                    <Button className = "btn-custom3"> <AiOutlinePlus/> Assignment </Button>
-                    <Button className = "btn-custom2"> <AiOutlinePlus/> Group  </Button>
-                    <br/>
                 </div>
-                <br/>
 
-                <ListGroup>
-                    <ListGroup.Item variant = "secondary"> ASSIGNMENTS</ListGroup.Item>
+                <div className="top_buttons">
+                    <button className="btn btn-custom2 top_buttons"><AiOutlinePlus/>Group</button>
 
-                    {courseAssignments.map((assignment) => (
                     <Link
                         key={assignment._id}
-                        to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-                        className="list-group-item">
-                        <PiDotsSixVerticalBold className = "end-icon"/> <br/>
-                        <div className='fw-bold'>{assignment.title}</div>
-                        Multiple Modules | Due Sep 18 at 11:59pm | 100 points
-                    </Link>
+                        to={`/Kanbas/Courses/${courseId}/Assignments/addAssignment`} ><button
+                        className="btn btn-custom3">
+                        <AiOutlinePlus/> Assignment
+                    </button></Link>
+                    <button className='btn btn-custom2 top_buttons'><FaEllipsisV/></button>
 
-                ))}
-                </ListGroup>
+                </div>
             </div>
 
+            <div className="list-group">
+                <h2 className="list-group-item assign-head">{courseId} Assignments:</h2>
+
+                {assignments.map((assignment) => (
+                    <div className = "list-group-item">
+                    <Link
+                        key={assignment._id}
+                        to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}>
+                        <div className='fw-bold'>{assignment.title}</div>
+                    </Link>
+                        Multiple Modules | 100 points
+
+                        <Link
+                            to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`} ><button
+                            className="btn btn-custom2">
+                             Edit
+                        </button></Link>
+
+                        <button
+                            onClick={() => handleDelete(assignment._id)}
+                            className="float-end btn btn-custom3" style={{ marginRight: 10 }}>
+                            Delete
+                        </button>
+
+
+                    </div>
+                    ))}
+            </div>
         </div>
-    );
+    )
 }
-export default Assignments;
+export default Assignments
