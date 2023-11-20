@@ -41,3 +41,8 @@
   width:250px !important;
   margin: 5px;
 }
+
+#qwe { background-color: green }
+#wer { background-color: blue }
+.qwe { background-color: green; color: white }
+.wer { background-color: blue; color: white }

@@ -63,9 +63,7 @@ function Dashboard({courses, course, setCourse, addNewCourse,
                                     <Button className ="btn-delete-dash"
                                             onClick={(event) => {event.preventDefault(); deleteCourse(course._id);}}>
                                         Delete <AiOutlineDelete/> </Button>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>

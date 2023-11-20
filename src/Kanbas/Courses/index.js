@@ -10,12 +10,24 @@ import Grades from "./Grades";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import {FaBars} from "react-icons/fa";
 import "./courses.css"
+import {useEffect, useState} from "react";
+import axios from "axios";
 
-
-function Courses({courses}) {
+function Courses() {
     const { courseId } = useParams();
-    const course = courses.find((course) => course._id === courseId);
     const { pathname } = useLocation();
+    const URL = "http://localhost:4000/api/courses";
+    const [course, setCourse] = useState({});
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
 
     return (
         <div>
