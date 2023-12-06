@@ -9,11 +9,17 @@ import {BsPersonVideo3} from "react-icons/bs";
 import {AiOutlineInbox} from "react-icons/ai";
 import {BsFillArrowRightSquareFill} from "react-icons/bs";
 import {AiOutlineQuestionCircle} from "react-icons/ai";
+import {CiLogin, CiLogout} from "react-icons/ci";
+import { FaRegIdCard } from "react-icons/fa";
+
 
 function KanbasNavigation() {
-  const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Commons", "Help"];
+  const links = ["Account", "Signin" , "Signup", "Signout","Dashboard", "Courses", "Calendar", "Inbox", "History", "Commons", "Help"];
   const linksToIconsMap = {
     Account: <MdOutlineAccountCircle className="fs-1 text kanbas-menu" />,
+    Signin:  <CiLogin className="fs-1 text kanbas-menu" />,
+    Signup:  <FaRegIdCard className="fs-1 text kanbas-menu" />,
+    Signout:  <CiLogout className="fs-1 text kanbas-menu" />,
     Dashboard: <RiDashboard3Line className="fs-1 text kanbas-menu" />,
     Courses: <FaBook className="fs-1 text kanbas-menu" />,
     Calendar: <BsCalendar2Week className="fs-1 text kanbas-menu" />,
